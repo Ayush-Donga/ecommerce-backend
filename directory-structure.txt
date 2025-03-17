@@ -1,4 +1,4 @@
-astyle-backend/
+ecommerce-backend/
 ├── src/
 │   ├── config/
 │   │   └── db.ts
