@@ -1,0 +1,19 @@
+astyle-backend/
+├── src/
+│   ├── config/
+│   │   └── db.ts
+│   ├── middleware/
+│   │   └── auth.ts
+│   ├── models/
+│   │   └── user.ts
+│   ├── routes/
+│   │   └── userRoutes.ts
+│   ├── graphql/
+│   │   ├── schema.ts
+│   │   └── resolvers.ts
+│   └── server.ts
+├── prisma/
+│   └── schema.prisma
+├── .env
+├── tsconfig.json
+└── package.json
