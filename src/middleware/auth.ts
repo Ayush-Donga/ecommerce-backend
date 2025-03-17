@@ -23,7 +23,7 @@ export const authenticate = (req: AuthRequest, res: Response, next: NextFunction
 };
 
 export const authorizeAdmin = (req: AuthRequest, res: Response, next: NextFunction): void => {
-  if (req.user?.role !== 'ADMIN') {
+  if (req.user?.role !== 'ADMIN' && req.user?.role !== 'SUPER_ADMIN' && req.user?.role !== 'USER') { 
     res.status(403).json({ error: 'Admin access required' });
     return;
   }
